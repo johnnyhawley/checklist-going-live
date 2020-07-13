@@ -2,6 +2,17 @@
 
 This checklist is used whenever a project is going live at https://spatie.be
 
+
+## Support us
+
+Learn how to create a package like this one, by watching our premium video course:
+
+[![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
+
+We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+
+We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+
 ## 1. Browserstack tests
 - [ ] Desktop: test on latest versions of Chrome, IE/Edge, Firefox, Safari
 - [ ] Mobile: test on latest versions of Mobile Safari, Android
@@ -74,7 +85,7 @@ _Repeat this section for all languages_
 - [ ] Try out visiting `http`, should redirect to `https`
 - [ ] Verify that all http status codes are ok with https://github.com/spatie/http-status-check
 - [ ] Scan for mixed content with https://github.com/spatie/mixed-content-scanner-cli
-- [ ] Verify that the content of robots header is current with `curl-I https://url` on `x-robots-tag`
+- [ ] Verify that indexing is not prohibited with `x-robots-tag: none` by checking `curl -I https://url | grep 'x-robots-tag'`. Allow robots in `.env`
 - [ ] Remove development DNS record
 - [ ] Check dns propagation with https://www.whatsmydns.net/
 - [ ] Verify Tag Manager / Analytics have been correctly set up
